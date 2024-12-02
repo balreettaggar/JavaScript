@@ -79,3 +79,44 @@
 // let stringNumber = String(someNumber);
 // console.log(stringNumber); // 33
 // console.log(typeof(stringNumber)) // strings
+
+// ********** OPERATIONS ************* //
+
+// let value = 3;
+// let negValue = -(value) // or negValue = -value;
+// console.log(negValue);
+
+// we can perform various operations in console itself
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/2);
+// console.log(2**3); // this is for exponentiation (2 raise to power 3);
+// console.log(2%3); // this is remainder 
+
+// let str1 = "hello ";
+// let str2 = "balreet";
+// // only addition in strings not subtraction
+// let str3 = str1+str2; 
+// console.log(str3);
+
+// console.log("1" + 2); // 12
+// console.log(1 + "2"); // 12
+// console.log("1" + 2 + 2); // 122
+// console.log(1 + 2 + "2"); // 32
+
+// if string is first then others are also treated as strings
+// if string is in last then first arithematics will be performed
+
+// console.log(true); // true
+// +true is possible it will convert boolean to number that is 1
+// but true+ is not possible it will give an error
+
+// console.log(+""); // "" is empty string boolean value false so + converts into number i.e. 0
+
+// let num1, num2, num3;
+// num1 = num2 = num3 = 2+2; // not a good code it should be readable enough
+
+// let gameCounter=100;
+// console.log(gameCounter++); //100
+// console.log(++gameCounter); // 101
