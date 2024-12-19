@@ -56,3 +56,56 @@ let myobj = {
 // to declare a function we use function keyword and we can also store it in a variable 
 const myFunction = function(){} // it will return a function if we console the typeof myFunction
 // returns function or more preisely function project
+
+// ***** STACK AND HEAP
+
+// in early languages like to reserve and free the memory, its a coder's job
+// it has become difficult
+
+// but now today's languages like js, memory control is not given to user
+
+// there is two types of memory stack and heap
+// Stack(primitive datatype), Heap(non-primitive)
+// when stack memory is used, user gets the copy of the variable he declared
+// when something is declared using heap memeory, it gives us the reference (original)
+// so whatever is changed in heap reflects in original
+
+// imagine stack like plates over one another
+
+let userOne = "Balreet";
+let userTwo = userOne;
+// console.log(userOne);
+// console.log(userTwo);
+// same value is printed but the thing is userTwo is taking copy of value of userOne not 
+// direct reference, we can check it by
+userTwo = "Singh";
+// console.log(userOne); 
+// console.log(userTwo);
+// userTwo is changed it means the new value overwrites the old one (which is the copy of userOne)
+// so the original value of userOne is not changed
+
+// now in case of heap
+
+const user1 = {
+    name:"Balreet",
+    email:"balreet0310.be23@chitkara.edu.in"
+}
+
+const user2 = user1; // user2 directly accesses the memory reference where the data of user1 is stored
+// not its copy
+
+// we can access the value of user by using dot operator
+// console.log(user1.emial);
+// console.log(user2.emial);
+
+user2.email = "balreetttaggar@gmail.com"; // this even changes the email for user1 
+// because it directly changes the reference
+
+console.log(user2.email);
+console.log(user1.email); 
+
+
+
+
+
+
