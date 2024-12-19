@@ -53,6 +53,20 @@
 // "33" => 33;
 // "33abc" => NaN (but its type is number)
 // true => 1; false => 0 
+// for "" empty string it will give zero
+
+// let a = "   ";
+// let b = Number(a);
+// console.log(b); // it will give zero
+
+// let a = "   ";
+// let b = Boolean(a);
+// console.log(b); // will return true because its a non empty string
+
+// let a = "";
+// let b = Boolean(a);
+// console.log(b); // returns false
+
 
 // let isLoggedIn = 1;
 // console.log(typeof isLoggedIn); // number
@@ -108,7 +122,7 @@
 // if string is first then others are also treated as strings
 // if string is in last then first arithematics will be performed
 
-// console.log(true); // true
+// console.log(+true); // true
 // +true is possible it will convert boolean to number that is 1
 // but true+ is not possible it will give an error
 
