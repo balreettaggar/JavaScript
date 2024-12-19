@@ -34,4 +34,25 @@ let id1 = Symbol('123');
 //console.log(id);
 // console.log(id1);
 // both the results appear same in console but...
-console.log(id==id1); // returns false
+// console.log(id==id1); // returns false
+// symbol is used to avoid any codecrashes because it makes passed value as different one
+
+const bigN = 23753928483293459345758479594793n;
+// to store these kind of nums js automatically use bigint
+// write n in last to represent its a bigInt, otherwise it is evaluated as number
+// also we will loose precision
+// console.log(typeof bigN);
+
+const heroes = ["shaktiman", "naagraj", "doga"]; // this is an array
+// in objects key value pairs are there
+let myobj = {
+    name: "Balreet",
+    age: 20,
+    department: "cse"
+    // datatype can be anything string, number, boolean anything in objects even functions
+    // arrays or even a different object
+}
+
+// to declare a function we use function keyword and we can also store it in a variable 
+const myFunction = function(){} // it will return a function if we console the typeof myFunction
+// returns function or more preisely function project
